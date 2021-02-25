@@ -10,4 +10,8 @@ public interface List <E> {
 
    public int size();
 
+   boolean contains(String x);
+
+   void addAll(java.util.List<String> list);
+
 }

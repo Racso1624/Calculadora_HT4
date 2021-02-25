@@ -13,13 +13,15 @@ public class MainCalculadora {
 		String prelinea = Lector.leer();
 
 		String linea = Intopostfix.infixToPostfix(prelinea);
-
-
+		
+		String respuesta;
+			
+		System.out.println("\n\nBienvenido a la Calculadora");
+		
 		boolean var = false;
         while(var == false){
 
-            System.out.println("\n\nBienvenido a la Calculadora");
-            System.out.println("Ingrese la clase de implementacion que desea ");
+            System.out.println("\n\nIngrese la clase de implementacion que desea ");
             System.out.println("1) ArrayList");
             System.out.println("2) Vector");
             System.out.println("3) Lista simplemente encadenada");
@@ -31,23 +33,27 @@ public class MainCalculadora {
                 int opcion = scanner.nextInt();
                 switch (opcion) {
 					case 1:
-                        System.out.println(linea);
+						respuesta = Vectoryarray.Array(linea);
+						System.out.println("La respuesta a " + prelinea + " es " + respuesta);
+						System.out.println("Este procedimiento fue hecho con ArrayList");
+						continue;
 					case 2:
-                        
+						respuesta =  Vectoryarray.Vector(linea);
+						System.out.println("La respuesta a " + prelinea + " es " + respuesta);
+						System.out.println("Este procedimiento fue hecho con Vector");
+						continue;
 					case 3:
-                        
+						continue;
 					case 4:
-                        
+						continue;
 					case 5:
                         var = true;
 
                 }
 
             } catch (InputMismatchException e) {
-                
                 System.out.println("\nOpcion Incorrecta, Ingresela de Nuevo");
                 scanner.nextLine();
-
             }
         }
 
