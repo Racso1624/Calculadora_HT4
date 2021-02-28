@@ -1,17 +1,13 @@
 public interface List <E> {
 
-   public void push(E data);
-
-   public E pop();
-
-   public E peek();
-
-   public boolean empty();
-
    public int size();
 
-   boolean contains(String x);
+   public boolean isEmpty();
 
-   void addAll(java.util.List<String> list);
+   public void add(E data);
 
+   public E remove();
+
+   public E get();
+ 
 }
