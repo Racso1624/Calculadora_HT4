@@ -1,8 +1,18 @@
+/****************************************
+ * Oscar Fernando López Barrios 20679
+ * Jose Pablo Monzon 20309
+ * Estructuras de Datos
+ * 28-02-2021
+ ****************************************/
+
+ //Se crea la clase SinglyLinkedList
 public class SinglyLinkedList<E> extends AbstractList<E> {
 
+    //Se crean las propiedades
 	protected int count; // list size
 	protected Node<E> head; // ref. to first element
 
+    //Se crea la constructor
 	public SinglyLinkedList()
    // post: generates an empty list
    {
@@ -11,6 +21,10 @@ public class SinglyLinkedList<E> extends AbstractList<E> {
    }
 
 
+   
+   /** 
+    * @return int se regresa el tamaño
+    */
    @Override
    public int size() {
 
@@ -18,6 +32,10 @@ public class SinglyLinkedList<E> extends AbstractList<E> {
 
    }
 
+   
+   /** 
+    * @param data se ingresa el dato
+    */
    @Override
    public void add(E data) {
        // location for new value
@@ -39,6 +57,10 @@ public class SinglyLinkedList<E> extends AbstractList<E> {
 
    }
 
+   
+   /** 
+    * @return E se regresa el dato
+    */
    @Override
    public E remove() {
 
@@ -49,6 +71,10 @@ public class SinglyLinkedList<E> extends AbstractList<E> {
 
     }
 
+   
+   /** 
+    * @return E se regresa el dato
+    */
    @Override
    public E get() {
 

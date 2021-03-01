@@ -1,12 +1,26 @@
+/****************************************
+ * Oscar Fernando López Barrios 20679
+ * Jose Pablo Monzon 20309
+ * Estructuras de Datos
+ * 28-02-2021
+ ****************************************/
+
 import java.util.Stack;
 
+//Se crea la clase Intopostfix
 public class Intopostfix {
     
+    
+    /** 
+     * @param operacion se ingresa la operacion infix
+     * @return String se regresa la operacion en postfix
+     */
+    //
     public static String infixToPostfix(String operacion){
-        // crear un string vacio
+        // Crear un string vacio
         String resultado = ""; 
               
-        // crear un stack vacio
+        // Crear un stack vacio
         Stack<Character> data = new Stack<Character>();
           
         for (int i = 0; i < operacion.length(); i++){
@@ -50,6 +64,11 @@ public class Intopostfix {
 
     }
 
+    
+    /** 
+     * @param character se ingresa el caracter
+     * @return int se retorna el numero del caracter
+     */
     public static int precedence(char character){ 
         switch (character) { 
 

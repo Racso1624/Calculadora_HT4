@@ -1,9 +1,22 @@
+/****************************************
+ * Oscar Fernando López Barrios 20679
+ * Jose Pablo Monzon 20309
+ * Estructuras de Datos
+ * 28-02-2021
+ ****************************************/
+
 import java.util.ArrayList;
 
+//Se crea la clase ArrayListStack
 public class ArrayListStack<E> implements Stack<E>{
     
+    //Se crean las propiedades
     ArrayList <E> arraylist = new ArrayList<E>();
 
+    
+    /** 
+     * @param data se ingresa el dato
+     */
     @Override
     public void push(E data) {
 
@@ -11,6 +24,10 @@ public class ArrayListStack<E> implements Stack<E>{
 
     }
 
+    
+    /** 
+     * @return boolean se regresa si esta vacio
+     */
     @Override
     public boolean empty() {
 
@@ -22,6 +39,10 @@ public class ArrayListStack<E> implements Stack<E>{
 
     }
 
+    
+    /** 
+     * @return int se regresa el tamaño
+     */
     @Override
     public int size() {
 
@@ -29,6 +50,10 @@ public class ArrayListStack<E> implements Stack<E>{
 
     }
 
+    
+    /** 
+     * @return E se regresa el dato del final
+     */
     @Override
     public E pop() {
 
@@ -38,6 +63,10 @@ public class ArrayListStack<E> implements Stack<E>{
 
     }
 
+    
+    /** 
+     * @return E se regresa el ultimo dato
+     */
     @Override
     public E peek() {
 

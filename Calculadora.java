@@ -1,10 +1,25 @@
+/****************************************
+ * Oscar Fernando López Barrios 20679
+ * Jose Pablo Monzon 20309
+ * Estructuras de Datos
+ * 28-02-2021
+ ****************************************/
+
+ //Se crea la clase Calculadora
 public class Calculadora {
 
+    //Se crean las propiedades
     Factory factory = new Factory();
 
     //Se crea el metodo Constructor
     public Calculadora(){}
 
+    
+    /** 
+     * @param expresion la expresion en formato postfix
+     * @param dato el numero de la implementacion
+     * @return String se regresa la respuesta
+     */
     public String Calculo(String expresion, int dato) {
 
         Stack<Integer> stack = factory.factoryStack(dato);

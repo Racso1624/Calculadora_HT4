@@ -1,13 +1,23 @@
-/**
- * MainCalculadora
- */
+/****************************************
+ * Oscar Fernando López Barrios 20679
+ * Jose Pablo Monzon 20309
+ * Estructuras de Datos
+ * 28-02-2021
+ ****************************************/
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+//Se crea la clase MainCalculadora
 public class MainCalculadora {
 
+	
+	/** 
+	 * @param args se ingresan los argumentos
+	 */
 	public static void main(String[] args) {
         
+		//Se crean las propiedades
 		Scanner scanner = new Scanner(System.in);
 		String prelinea = Lector.leer();
 		String linea = Intopostfix.infixToPostfix(prelinea);
