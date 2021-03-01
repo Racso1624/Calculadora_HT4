@@ -42,19 +42,19 @@ public class Calculadora {
 
                     //Se crean los casos dependiendo del signo
                     case '+':
-                        int suma = numerodos + numerouno;
+                        int suma = Singleton.operar(numerouno, numerodos, 1);
                         stack.push(suma);
                         break;
                     case '-':
-                        int resta = numerodos - numerouno;
+                        int resta = Singleton.operar(numerouno, numerodos, 2);
                         stack.push(resta);
                         break;
                     case '*':
-                        int multiplicacion = numerodos * numerouno;
+                        int multiplicacion = Singleton.operar(numerouno, numerodos, 3);
                         stack.push(multiplicacion);
                         break;
                     case '/':
-                        int division = numerodos / numerouno;
+                        int division = Singleton.operar(numerouno, numerodos, 4);
                         stack.push(division);
                         break;    
                     default:

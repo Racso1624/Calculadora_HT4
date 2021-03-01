@@ -42,12 +42,10 @@ public class MainCalculadora {
 						continue;
 					case 3:
 						respuesta =  calculadora.Calculo(linea, 3);
-						System.out.println("La respuesta a " + prelinea + " es " + respuesta);
 						System.out.println("La respuesta a " + prelinea + " que fue convertida a " + linea + " es " + respuesta);
 						continue;
 					case 4:
 						respuesta =  calculadora.Calculo(linea, 4);
-						System.out.println("La respuesta a " + prelinea + " es " + respuesta);
 						System.out.println("La respuesta a " + prelinea + " que fue convertida a " + linea + " es " + respuesta);
 						continue;
 					case 5:
